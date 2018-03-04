@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Train Scheduler</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron my-2 py-4 text-center text-white border border-warning">
+            <h1 class="font-italic">
+                <strong>Anytime is Train Time</strong>
+            </h1>
+            <p>Schedule Multiple Trains with this Scheduler application</p>
+        </div>
+        <!-- Train Schedule area -->
+        <div class="row justify-content-center">
+            <div class="col-sm-8 mt-4">
+                <div class="card border border-warning">
+                    <div class="card-header float-left">
+                        <h4 class="card-title font-weight-bold text-white m-0">
+                            Current Train Schedule
+                            <span>
+                                <p class="float-right m-0">
+                                    <span id="curr-date-time"></span>
+                                </p>
+                            </span>
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-borderless table-responsive-sm table-sm table-hover schedule-bg-color">
+                            <thead>
+                                <tr>
+                                    <th>Train Name</th>
+                                    <th>Destination</th>
+                                    <th>Frequency (min)</th>
+                                    <th>Next Arrival</th>
+                                    <th>Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Display train schedules here using jQuery -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add a Train area -->
+            <div class="col-sm-4 mt-4">
+                <div class="card border border-warning">
+                    <div class="card-header">
+                        <h4 class="card-title font-weight-bold text-white m-0">
+                            Add Train
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <form role="form">
+                            <div class="form-group font-weight-bold">
+                                <label for="train-name">Train Name</label>
+                                <input type="text" class="form-control form-control-sm" id="train-name-input">
+                            </div>
+                            <div class="form-group font-weight-bold">
+                                <label for="destination">Destination</label>
+                                <input type="text" class="form-control form-control-sm" id="train-destination-input">
+                            </div>
+                            <div class="form-group font-weight-bold">
+                                <label for="train-timer">First Train Time</label>
+                                <input type="text" class="form-control form-control-sm" id="train-first-time-input" placeholder="hh:mm - use 24 hour time format">
+                            </div>
+                            <div class="form-group font-weight-bold">
+                                <label for="train-frequency">Train Frequency</label>
+                                <input type="number" class="form-control form-control-sm" id="train-frequency-input" placeholder="Example - this train runs every 30 minutes">
+                            </div>
+                            <!-- submit button -->
+                            <button type="submit" class="btn btn-sm button-brown text-white" id="add-train-btn">
+                                Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+
+    <script type="text/javascript" src="./assets/javascript/trainScheduler.js"></script>  -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+
+body {
+background-image: url("../images/animated train scene slow.gif");
+background-position: center;
+background-size:100%;
+background-repeat: repeat-y;
+background-attachment: fixed;
+height:100%;
+width:100%;
+}
+
+
+
+
+.card-body {
+  background-color: beige;
+}
+.form-control {
+  background-color: beige;
+}
+
+.card-header {
+  background-color: #B97A57;
+}
+
+.button-brown {
+  background-color: #B97A57;
+}
+
+.jumbotron {
+background-image: url("../images/train-vector-small.png");
+background-position: top;
+background-size:20%;
+background-repeat: no-repeat;
+background-attachment: scroll;
+height:100%;
+width:100%;
+background-color: #B97A57;
+font-family: 'Open Sans', sans-serif;
+text-shadow: 1px 1px 2px black, 0 0 25px skyblue, 0 0 5px darkblue;
+}
+
+.train-icon {
+  background: url("../images/train-icon.png");
+  height: 22px;
+  width:45px;
+  display: cover;
+  float: left;
+}
+
+.table-borderless>tbody>tr>td {
+    border: none;
+}
+
