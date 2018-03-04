@@ -21,8 +21,8 @@ To schedule a train, the user must provide the following information:
     
     d. The train's route frequency expressed in minutes between each train trip. An example would be that a train runs a route every 30 minutes.    
     
-When the user submits the new train schedule information, the application calculates the next train's arrival time and how many minutes away 
+When the user submits the new train schedule information, the application calculates the next train's arrival time and how many minutes away that is from the current time. 
 
-that is from the current time. The application also stores this information in the database thus, making the information available to other users.  
+The application also stores this information in the database thus, making the information available to other users.  
 
 Currently, only the original developer maintains and contributes to this project.
